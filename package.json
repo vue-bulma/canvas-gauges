@@ -1,0 +1,19 @@
+{
+  "name": "vue-canvas-gauges",
+  "version": "0.0.0",
+  "description": "Canvas gauges component is based on canvas-gauges for Vue",
+  "main": "src/index.js",
+  "scripts": {},
+  "keywords": [
+    "vue",
+    "canvas-gauges",
+    "canvas",
+    "gauges",
+    "chart"
+  ],
+  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "canvas-gauges": "Mikhus/canvas-gauges"
+  }
+}
