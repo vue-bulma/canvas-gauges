@@ -22,8 +22,9 @@ export default {
   },
 
   mounted () {
-    this.chart = new LinearGauge(Object.assign(this.options, { renderTo: this.$el, value: this.value}))
-      .draw()
+    if (this.value) this.options.value = this.value
+    this.options.renderTo = this.$el
+    this.chart = new LinearGauge(Object.assign(this.options)).draw()
   },
 
   beforeDestroy() {
@@ -32,7 +33,8 @@ export default {
 
   watch: {
     value (val) {
-      this.chart.value = val
+      // has bug
+      // this.chart.value = val
     }
   }
 
