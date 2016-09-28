@@ -24,7 +24,7 @@ export default {
   mounted () {
     if (this.value) this.options.value = this.value
     this.options.renderTo = this.$el
-    this.chart = new LinearGauge(Object.assign(this.options)).draw()
+    this.chart = new LinearGauge(this.options).draw()
   },
 
   beforeDestroy() {

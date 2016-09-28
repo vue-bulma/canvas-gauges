@@ -24,7 +24,7 @@ export default {
   mounted () {
     if (this.value) this.options.value = this.value
     this.options.renderTo = this.$el
-    this.chart = new RadialGauge(Object.assign(this.options)).draw()
+    this.chart = new RadialGauge(this.options).draw()
   },
 
   beforeDestroy() {
