@@ -1,7 +1,7 @@
 import LinearGauge from './LinearGauge'
 import RadialGauge from './RadialGauge'
 
-module.exports = {
+export {
   LinearGauge,
   RadialGauge
 }
