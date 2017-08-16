@@ -13,7 +13,7 @@ $ npm install vue-canvas-gauges --save
 ```vue
 <template>
   <div>
-    <radial-gauge options="{ value: 233 }"></radial-gauge>
+    <radial-gauge :options="{ value: 233 }"></radial-gauge>
     <linear-gauge :value="377"></linear-gauge>
   </div>
 </template>
@@ -23,8 +23,8 @@ import { LinearGauge, RadialGauge }  from 'vue-canvas-gauges'
 
 export default {
   components: {
-    LinearGauge,
-    RadialGauge
+    'linear-gauge': LinearGauge,
+    'radial-gauge': RadialGauge
   }
 }
 </script>
